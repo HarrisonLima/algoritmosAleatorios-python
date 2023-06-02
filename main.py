@@ -1,5 +1,15 @@
 from email.policy import default
 
+from src.exercicio01 import twoFer
+from src.exercicio02 import troca
+from src.exercicio03 import ajusteSalarial
+from src.exercicio04 import fizzBuzz
+from src.exercicio05 import areaCircunferencia
+from src.exercicio06 import somaPares
+from src.exercicio07 import salarioLiquidoProfessor
+from src.exercicio08 import volumeCaixa
+from src.exercicio09 import conversaoReal
+from src.exercicio10 import conversaoDolar
 from src.exercicio11 import somaQuadrados
 from src.exercicio12 import quadradoSoma
 from src.exercicio13 import velocidadeProjetil
@@ -17,7 +27,7 @@ print("A2. Troca")
 print("A3. Ajuste Salarial")
 print("A4. FizzBuzz")
 print("A5. Área de uma circunferência")
-print("A6. Soma dos pares)")
+print("A6. Soma dos pares")
 print("A7. Salário Líquido Professor")
 print("A8. Volume da caixa")
 print("A9. Conversão em Real")
@@ -46,20 +56,32 @@ print("A31. Quebra de Linha")
 print("A32. Sudoku")
 print("----------------------------------------")
 
+
 def switch_case(case):
     switch = {
-        11: somaQuadrados.SomaQuadrados(),
-        12: quadradoSoma.QuadradoSoma(),
-        13: velocidadeProjetil.VelocidadeProjetil(),
-        14: eleicaoSindical.EleicaoSindical(),
-        15: mediaAluno.MediaAluno(),
-        16: somandoNaturais.SomandoNaturais(),
-        17: ordenandoInteiros.OrdenandoInteiros(),
-        18: palindromo.Palindromo(),
-        19: scrabbleScore.ScrabbleScore(),
-        20: fatorial.Fatorial()
+        1: twoFer.TwoFer,
+        2: troca.Troca,
+        3: ajusteSalarial.AjusteSalarial,
+        4: fizzBuzz.FizzBuzz,
+        5: areaCircunferencia.AreaCircunferencia,
+        6: somaPares.SomaPares,
+        7: salarioLiquidoProfessor.SalarioLiquidoProfessor,
+        8: volumeCaixa.VolumeCaixa,
+        9: conversaoReal.ConversaoReal,
+        10: conversaoDolar.ConversaoDolar,
+        11: somaQuadrados.SomaQuadrados,
+        12: quadradoSoma.QuadradoSoma,
+        13: velocidadeProjetil.VelocidadeProjetil,
+        14: eleicaoSindical.EleicaoSindical,
+        15: mediaAluno.MediaAluno,
+        16: somandoNaturais.SomandoNaturais,
+        17: ordenandoInteiros.OrdenandoInteiros,
+        18: palindromo.Palindromo,
+        19: scrabbleScore.ScrabbleScore,
+        20: fatorial.Fatorial
     }
     switch.get(case, default)()
+
 
 if __name__ == '__main__':
     opcao = int(input("Digite o número do exercício que deseja executar: "))
