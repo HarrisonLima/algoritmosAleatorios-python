@@ -1,4 +1,4 @@
-def Palindromo():
+def palindromo():
     entrada = input("Digite uma palavra, frase ou número: ")
     entrada = entrada.lower()
 
@@ -7,3 +7,5 @@ def Palindromo():
     else:
         print(f"{entrada} não é um palíndromo.")
 
+if __name__ == '__main__':
+    palindromo()

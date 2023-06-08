@@ -1,4 +1,4 @@
-def Fatorial():
+def fatorial():
     numero = int(input("Digite um número inteiro: "))
 
     fatorial = 1
@@ -6,3 +6,6 @@ def Fatorial():
         fatorial *= i
 
     print(f"O fatorial de {numero} é: {fatorial}")
+
+if __name__ == '__main__':
+    fatorial()
