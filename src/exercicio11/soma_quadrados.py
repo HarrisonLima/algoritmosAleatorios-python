@@ -5,6 +5,3 @@ def soma_quadrados():
 
     resultado = valor1**2 + valor2**2 + valor3**2
     print(f'Resultado: {resultado}')
-
-if __name__ == '__main__':
-    soma_quadrados()
