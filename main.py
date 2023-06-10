@@ -1,4 +1,4 @@
-print("----------Listagem de exercícios----------")
+print("---------Listagem de exercícios---------")
 print("A1. Two Fer (2-Fer)")
 print("A2. Troca")
 print("A3. Ajuste Salarial")
@@ -31,7 +31,7 @@ print("A29. Pangrama")
 print("A30. Troco")
 print("A31. Quebra de Linha")
 print("A32. Sudoku")
-print("----------------------------------------")
+print("---------------------------------------")
 
 exercise = int(input("Digite o número do exercício que deseja executar: "))
 if exercise == 1:
